@@ -1,4 +1,4 @@
-DROP DATABASE TaskManagement;
+DROP DATABASE IF EXISTS TaskManagement;
 
 CREATE DATABASE TaskManagement;
 
