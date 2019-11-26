@@ -1,4 +1,4 @@
-USE `heroku_72a3b7d93ef8a36`;
+USE TaskManagement;
 
 CREATE TABLE security(
 	id INT AUTO_INCREMENT PRIMARY KEY,
