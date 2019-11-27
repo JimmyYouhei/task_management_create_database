@@ -15,7 +15,7 @@ CREATE TABLE staff (
     create_by INT , 
     create_time TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     update_by INT,
-    update_time TIMESTAMP ,
+    update_time TIMESTAMP NULL DEFAULT NULL,
     
 
 	FOREIGN KEY(create_by) REFERENCES staff(id),
@@ -31,7 +31,7 @@ CREATE TABLE office(
 	create_by INT , 
     create_time TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     update_by INT,
-    update_time TIMESTAMP ,
+    update_time TIMESTAMP NULL DEFAULT NULL,
 
 	FOREIGN KEY(create_by) REFERENCES staff(id),
 	FOREIGN KEY(update_by) REFERENCES staff(id), 
@@ -50,7 +50,7 @@ CREATE TABLE team(
 	create_by INT , 
     create_time TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     update_by INT,
-    update_time TIMESTAMP ,
+    update_time TIMESTAMP NULL DEFAULT NULL,
     
 	FOREIGN KEY(create_by) REFERENCES staff(id),
 	FOREIGN KEY(update_by) REFERENCES staff(id),
@@ -67,7 +67,7 @@ CREATE TABLE staff_team(
 	create_by INT , 
     create_time TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     update_by INT,
-    update_time TIMESTAMP ,
+    update_time TIMESTAMP NULL DEFAULT NULL,
     
 	FOREIGN KEY(create_by) REFERENCES staff(id),
 	FOREIGN KEY(update_by) REFERENCES staff(id), 
@@ -88,7 +88,7 @@ CREATE TABLE project(
 	create_by INT , 
     create_time TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     update_by INT,
-    update_time TIMESTAMP ,
+    update_time TIMESTAMP NULL DEFAULT NULL,
     
 	FOREIGN KEY(create_by) REFERENCES staff(id),
 	FOREIGN KEY(update_by) REFERENCES staff(id),
@@ -104,7 +104,7 @@ CREATE TABLE team_project(
 	create_by INT , 
     create_time TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     update_by INT,
-    update_time TIMESTAMP ,
+    update_time TIMESTAMP NULL DEFAULT NULL,
     
 	FOREIGN KEY(create_by) REFERENCES staff(id),
 	FOREIGN KEY(update_by) REFERENCES staff(id),
@@ -125,7 +125,7 @@ CREATE TABLE task_category(
 	create_by INT , 
     create_time TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     update_by INT,
-    update_time TIMESTAMP ,
+    update_time TIMESTAMP NULL DEFAULT NULL,
 
 	FOREIGN KEY(create_by) REFERENCES staff(id),
 	FOREIGN KEY(update_by) REFERENCES staff(id),
@@ -147,7 +147,7 @@ CREATE TABLE subtask(
 	create_by INT , 
     create_time TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     update_by INT,
-    update_time TIMESTAMP ,
+    update_time TIMESTAMP NULL DEFAULT NULL,
 
 	FOREIGN KEY(create_by) REFERENCES staff(id),
 	FOREIGN KEY(update_by) REFERENCES staff(id),
@@ -166,7 +166,7 @@ CREATE TABLE staff_subtask(
 	create_by INT , 
     create_time TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     update_by INT,
-    update_time TIMESTAMP ,
+    update_time TIMESTAMP NULL DEFAULT NULL,
     
 	FOREIGN KEY(create_by) REFERENCES staff(id),
 	FOREIGN KEY(update_by) REFERENCES staff(id),
