@@ -16,4 +16,4 @@ CREATE TABLE security(
 Insert Into staff (full_name) Values ("HVCG");
 
 Insert Into security (username , password , role , staff_id) 
-Values ("HocVoiChuyenGia" , "$12$s5bLefZEhDNsNKo4OvdVQuyWGBvM7V3uutdGn0yBMHGxqiRCxWLnq" , "ADMIN" , 1)
+Values ("HocVoiChuyenGia" , "$2y$12$lIm1m4ql1hKzHGMTcZngj.Q4CVCo1WmcCTnyaiQctWjoNKMj85n6y" , "ADMIN" , 1)
