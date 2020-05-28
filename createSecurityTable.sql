@@ -12,3 +12,8 @@ CREATE TABLE security(
     FOREIGN KEY (staff_id) REFERENCES staff(id)
 
 );
+
+Insert Into staff (full_name) Values ("HVCG");
+
+Insert Into security (username , password , role , staff_id) 
+Values ("HocVoiChuyenGia" , "$12$s5bLefZEhDNsNKo4OvdVQuyWGBvM7V3uutdGn0yBMHGxqiRCxWLnq" , "ADMIN" , 1)
